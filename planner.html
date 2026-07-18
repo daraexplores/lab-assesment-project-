@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Academic Planner | Darasimi Jegede</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<a href="index.html" class="logo">
+
+DJ<span>.dev</span>
+
+</a>
+
+<ul class="nav-menu">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="projects.html">Projects</a></li>
+
+<li><a class="active" href="planner.html">Academic Planner</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<div class="nav-actions">
+
+<button id="theme-toggle">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+<div class="hamburger">
+
+<span></span>
+
+<span></span>
+
+<span></span>
+
+</div>
+
+</div>
+
+</nav>
+
+</header>
+
+<main>
+
+<section class="planner-hero">
+
+<div class="section-title">
+
+<h1>
+
+Academic Planner
+
+</h1>
+
+<p>
+
+Stay organised, manage your coursework and keep track of your academic progress.
+
+</p>
+
+</div>
+
+<div class="planner-stats">
+
+<div class="stat-box">
+
+<h2 id="totalTasks">
+
+4
+
+</h2>
+
+<p>
+
+Total Tasks
+
+</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2 id="completedTasks">
+
+1
+
+</h2>
+
+<p>
+
+Completed
+
+</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2 id="pendingTasks">
+
+3
+
+</h2>
+
+<p>
+
+Pending
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="planner-form-section">
+
+<div class="info-card">
+
+<h2>
+
+Add New Task
+
+</h2>
+
+<form id="taskForm">
+
+<div class="form-group">
+
+<label for="taskName">
+
+Task Name
+
+</label>
+
+<input
+type="text"
+id="taskName"
+placeholder="Enter task name"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label for="course">
+
+Course
+
+</label>
+
+<input
+type="text"
+id="course"
+placeholder="e.g. COS102">
+
+</div>
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label for="priority">
+
+Priority
+
+</label>
+
+<select id="priority">
+
+<option>High</option>
+
+<option>Medium</option>
+
+<option>Low</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label for="importance">
+
+Importance
+
+</label>
+
+<select id="importance">
+
+<option>Very Important</option>
+
+<option>Important</option>
+
+<option>Optional</option>
+
+</select>
+
+</div>
+
+</div>
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label for="difficulty">
+
+Difficulty
+
+</label>
+
+<select id="difficulty">
+
+<option>Easy</option>
+
+<option>Medium</option>
+
+<option>Hard</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label for="dueDate">
+
+Due Date
+
+</label>
+
+<input
+type="date"
+id="dueDate">
+
+</div>
+
+</div>
+
+<button
+type="submit"
+class="btn primary-btn">
+
+<i class="fa-solid fa-plus"></i>
+
+Add Task
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section class="planner-tools">
+
+<div class="planner-search">
+
+<input
+type="text"
+id="searchTask"
+placeholder="Search tasks...">
+
+</div>
+
+<div class="planner-filter">
+
+<select id="filterTasks">
+
+<option value="all">
+
+All Tasks
+
+</option>
+
+<option value="pending">
+
+Pending
+
+</option>
+
+<option value="completed">
+
+Completed
+
+</option>
+
+</select>
+
+</div>
+
+</section>
+
+<section class="planner-tasks">
+
+<h2>
+
+Scheduled Tasks
+
+</h2>
+
+<div id="taskContainer">
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<div class="footer-content">
+
+<h3>
+
+Darasimi Jegede
+
+</h3>
+
+<p>
+
+Computer Science Student
+
+</p>
+
+<div class="footer-links">
+
+<a href="index.html">
+
+Home
+
+</a>
+
+<a href="about.html">
+
+About
+
+</a>
+
+<a href="projects.html">
+
+Projects
+
+</a>
+
+<a href="planner.html">
+
+Planner
+
+</a>
+
+<a href="contact.html">
+
+Contact
+
+</a>
+
+</div>
+
+<div class="social-links">
+
+<a href="https://github.com/daraexplores"
+target="_blank">
+
+<i class="fab fa-github"></i>
+
+</a>
+
+</div>
+
+<button id="backToTop">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<p class="copyright">
+
+© 2026 Darasimi Jegede
+
+</p>
+
+</div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+<script src="js/planner.js"></script>
+
+</body>
+
+</html>
