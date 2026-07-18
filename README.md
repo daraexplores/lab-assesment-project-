@@ -14,6 +14,9 @@ Computer Science
 - Academic planner
 - Contact form with EmailJS
 - Dark mode
+- Task search and filter
+- Local storage
+- Multi-page navigation 
 
 ## Technologies
 
@@ -26,3 +29,7 @@ Computer Science
 ## GitHub
 
 https://github.com/daraexplores
+
+## Live Demo
+
+https://daraexplores.github.io/lab-assesment-project-/
